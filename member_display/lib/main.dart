@@ -72,8 +72,8 @@ class PositionedWidget extends StatelessWidget {
             width: 370.0,
             child: Material(
               borderRadius: BorderRadius.circular(20.0),
-              shadowColor: Colors.greenAccent,
-              color: Colors.green,
+              shadowColor: Colors.indigoAccent,
+              color: Colors.indigo,
               elevation: 7.0,
               child: Center(
                 child: Text(
@@ -92,8 +92,8 @@ class PositionedWidget extends StatelessWidget {
             width: 370.0,
             child: Material(
               borderRadius: BorderRadius.circular(20.0),
-              shadowColor: Colors.redAccent,
-              color: Colors.red,
+              shadowColor: Colors.greenAccent,
+              color: Colors.green,
               elevation: 7.0,
               child: Center(
                 child: Text(
@@ -112,8 +112,8 @@ class PositionedWidget extends StatelessWidget {
             width: 370.0,
             child: Material(
               borderRadius: BorderRadius.circular(20.0),
-              shadowColor: Colors.blueAccent,
-              color: Colors.blue,
+              shadowColor: Colors.redAccent,
+              color: Colors.red,
               elevation: 7.0,
               child: Center(
                 child: Text(
