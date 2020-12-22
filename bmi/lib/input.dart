@@ -1,12 +1,15 @@
+import 'package:bmi/output.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:bmi/brain.dart';
 
-class Input extends StatefulWidget {
+class InPut extends StatefulWidget {
   @override
-  _InputState createState() => _InputState();
+  _InPutState createState() => _InPutState();
 }
 
-class _InputState extends State<Input> {
+class _InPutState extends State<InPut> {
   double height = 100;
   double weight = 50;
   double age = 20;
@@ -228,7 +231,14 @@ class _InputState extends State<Input> {
                 children: <Widget>[
                   Expanded(
                     child: FlatButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context)
+                            .push(CupertinoPageRoute(builder: (_) {
+                          CalculatorBrain brain = CalculatorBrain(
+                              height: height.round(), weight: weight.round());
+                          return OutPut(brain);
+                        }));
+                      },
                       color: Colors.red,
                       child: Text(
                         'CALCULATE',

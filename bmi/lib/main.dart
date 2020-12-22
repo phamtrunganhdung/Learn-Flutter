@@ -1,7 +1,5 @@
-import 'package:bmi/output.dart';
 import 'package:flutter/material.dart';
-import 'input.dart';
-import 'output.dart';
+import 'package:bmi/input.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +14,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.indigo,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Input(),
+      home: InPut(),
     );
   }
 }
